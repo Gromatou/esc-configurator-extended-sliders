@@ -28,9 +28,45 @@ COMMON['200'] = {
         value: '12',
         label: '24%  (1.25)',
       }, {
-        value: '13',
-        label: '29%  (1.50)',
-      }],
+      value: '13',
+      label: '29%  (1.50)',
+    }, {
+      value: '14',
+      label: '32%  (1.75)',
+    }, {
+      value: '15',
+      label: '35%  (2.00)',
+    }, {
+      value: '16',
+      label: '38%  (2.25)',
+    }, {
+      value: '17',
+      label: '41%  (2.50)',
+    }, {
+      value: '18',
+      label: '44%  (2.75)',
+    }, {
+      value: '19',
+      label: '47%  (3.00)',
+    }, {
+      value: '20',
+      label: '50%  (3.25)',
+    }, {
+      value: '21',
+      label: '53%  (3.50)',
+    }, {
+      value: '22',
+      label: '56%  (3.75)',
+    }, {
+      value: '23',
+      label: '59%  (4.00)',
+    }, {
+      value: '24',
+      label: '62%  (4.25)',
+    }, {
+      value: '25',
+      label: '65%  (4.50) Max',
+    }],
       label: 'Rampup Start Power',
     },
     {
@@ -195,7 +231,7 @@ COMMON['201'] = {
     label: 'escMaxStartupPower',
     // Note: The real displayFactor is 1000 / 255 but 250 makes the slider nicer to work with minimal loss of accuracy
     min: 1004,
-    max: 1300,
+    max: 1800,
     step: 4,
     displayFactor: 1000 / 250,
     displayOffset: 1000,
@@ -251,6 +287,42 @@ COMMON['201'] = {
     }, {
       value: '13',
       label: '13x (Less protection)',
+    }, {
+      value: '14',
+      label: '14x',
+    }, {
+      value: '15',
+      label: '15x',
+    }, {
+      value: '16',
+      label: '16x',
+    }, {
+      value: '17',
+      label: '17x',
+    }, {
+      value: '18',
+      label: '18x',
+    }, {
+      value: '19',
+      label: '19x',
+    }, {
+      value: '20',
+      label: '20x',
+    }, {
+      value: '21',
+      label: '21x',
+    }, {
+      value: '22',
+      label: '22x',
+    }, {
+      value: '23',
+      label: '23x',
+    }, {
+      value: '24',
+      label: '24x',
+    }, {
+      value: '25',
+      label: '25x (Max power)',
     }, {
       value: '0',
       label: 'Off',
@@ -597,14 +669,15 @@ DEFAULTS['207'] = { // v0.20
 
 DEFAULTS['208'] = { // v0.21
   ...DEFAULTS['207'],
-  STARTUP_POWER_MIN: 51,
-  STARTUP_POWER_MAX: 5,
+  STARTUP_POWER_MIN: 60,
+  STARTUP_POWER_MAX: 120,
 };
 delete DEFAULTS['208'].DITHERING;
 
 DEFAULTS['209'] = { // v0.22
   ...DEFAULTS['208'],
   PWM_FREQUENCY: 24,
+  RPM_POWER_SLOPE: 13,
   STARTUP_MELODY_WAIT_MS: 0,
   THRESHOLD_96to48: 85,
   THRESHOLD_48to24: 170,
