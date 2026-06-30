@@ -9,8 +9,8 @@
 body {
   font-family: 'open_sansregular', 'Segoe UI', Tahoma, sans-serif;
   font-size: 12px;
-  color: #E0E0E0;
-  background-color: #1A1A1A;
+  color: #303030;
+  background-color: lightgray;
   margin: 0;
   padding: 0;
   width: 100%;
@@ -136,10 +136,24 @@ body {
   height: calc(100% - 7px);
 
   .main__header {
-    background: #3d3f3e;
+    background: #1A0A00;
     position: fixed;
     width: 100%;
     z-index: 1;
+  }
+
+  .torque-warning {
+    position: fixed;
+    top: 110px;
+    width: 100%;
+    z-index: 2;
+    background: #BF360C;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 6px 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
   }
 
   .main__bar {
@@ -177,7 +191,7 @@ body {
       display: flex;
       flex-direction: row;
       margin: 0;
-      background: #3d3f3e;
+    background: #1A0A00;
 
       & > * {
         flex: 1;

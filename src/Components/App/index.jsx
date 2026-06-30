@@ -87,6 +87,10 @@ function App({
           <Log />
         </header>
 
+        <div className="torque-warning">
+          <span>!! TORQUE MOD - Danger: peut endommager ESCs et moteurs. Usage a vos risques et perils.</span>
+        </div>
+
         <MainContent
           getBatteryState={getBatteryState}
           onAllMotorSpeed={onAllMotorSpeed}
