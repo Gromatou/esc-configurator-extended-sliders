@@ -521,6 +521,18 @@ const INDIVIDUAL_SETTINGS_203 = [
 const INDIVIDUAL_SETTINGS_208 = [
   ...INDIVIDUAL_SETTINGS_203,
   {
+    name: 'MIN_DUTY_CYCLE',
+    type: 'number',
+    label: 'escMinDutyCycle',
+    min: 0,
+    max: 13,
+    step: 1,
+    displayFactor: 5 / 13,
+    displayOffset: 0,
+    displayPrecision: 1,
+    displaySuffix: '%',
+  },
+  {
     name: 'STARTUP_MELODY_WAIT_MS',
     type: 'dummy',
   },
@@ -604,6 +616,7 @@ DEFAULTS['208'] = { // v0.21
   ...DEFAULTS['207'],
   STARTUP_POWER_MIN: 60,
   STARTUP_POWER_MAX: 120,
+  MIN_DUTY_CYCLE: 5,
 };
 delete DEFAULTS['208'].DITHERING;
 

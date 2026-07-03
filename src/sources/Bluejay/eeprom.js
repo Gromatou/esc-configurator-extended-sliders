@@ -74,7 +74,7 @@ const LAYOUT = {
     offset: 0x12,
     size: 1,
   },
-  __STARTUP_ACCELERATION: {
+  MIN_DUTY_CYCLE: {
     offset: 0x13,
     size: 1,
   },
